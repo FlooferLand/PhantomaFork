@@ -4,3 +4,6 @@
 [submodule "art"]
 	path = art
 	url = https://github.com/FunkinCrew/funkin.art
+[submodule "phantoma.assets"]
+	path = assets
+	url = https://github.com/FlooferLand/phantoma.assets.git
