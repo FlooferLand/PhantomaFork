@@ -1,15 +1,13 @@
-# Friday Night Funkin' 
+# Friday Night Funkin' (Phantoma Fork)
 
-Friday Night Funkin' is a rhythm game. Built using HaxeFlixel for Ludem Dare 47.
+Phantoma <sup>_(pronounced /Fhantomah/)_</sup> is a fork of [Friday Night Funkin'](https://github.com/FunkinCrew/Funkin) made to fix a couple of things
+and make the vanilla game more consistent.
 
-This game was made with love to Newgrounds and it's community. Extra love to Tom Fulp.
+Phantoma is an "engine" of sorts that doesn't massively refactor FNF's code and serves as an option for people who want more settings and customizability, who also want to keep up with the latest FNF updates.
 
-- [Playable web demo on Newgrounds!](https://www.newgrounds.com/portal/view/770371)
-- [Demo download builds for Windows, Mac, and Linux from Itch.io!](https://ninja-muffin24.itch.io/funkin)
+The difference between Phantoma and other forks _(like Kade and Psych Engine_) is that Phantoma focuses more on keeping up to date with new official FNF songs and features rather than focusing on the modder's ease-of-use.
 
 # Getting Started
-
-**PLEASE USE THE LINKS ABOVE IF YOU JUST WANT TO PLAY THE GAME**
 
 To learn how to install the necessary dependencies and compile the game from source, please check out our [building the game](/docs/COMPILING.md) guide.
 
