@@ -10,6 +10,7 @@ import funkin.ui.debug.charting.ChartEditorState.ChartEditorLiveInputStyle;
 import funkin.ui.debug.charting.ChartEditorState.ChartEditorTheme;
 import thx.semver.Version;
 import funkin.util.SerializerUtil;
+import funkin.ui.options.MenuItemEnums;
 
 @:nullSafety
 class Save
@@ -53,7 +54,8 @@ class Save
   public function new(?data:RawSaveData)
   {
     if (data == null) this.data = Save.getDefault();
-    else this.data = data;
+    else
+      this.data = data;
   }
 
   public static function getDefault():RawSaveData
@@ -80,6 +82,9 @@ class Save
       options:
         {
           // Reasonable defaults.
+          noteHitSound: NoteHitSoundType.None,
+          noteHitSoundVolume: 100,
+          noteSplash: true,
           naughtyness: true,
           downscroll: false,
           flashingLights: true,
@@ -835,6 +840,23 @@ typedef SaveScoreTallyData =
  */
 typedef SaveDataOptions =
 {
+  /**
+   * The sound to play when a note is hit
+   */
+  var noteHitSound:String;
+
+  /**
+   * The volume of the sound that can play when a note is hit
+   * @default `100`
+   */
+  var noteHitSoundVolume:Int;
+
+  /**
+   * Whenever to display a splash animation when perfectly hitting a note
+   * @default `true`
+   */
+  var noteSplash:Bool;
+
   /**
    * Whether some particularly fowl language is displayed.
    * @default `true`

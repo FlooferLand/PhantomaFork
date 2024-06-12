@@ -65,6 +65,7 @@ import lime.ui.Haptic;
 import openfl.display.BitmapData;
 import openfl.geom.Rectangle;
 import openfl.Lib;
+import funkin.ui.options.items.PercentagePreferenceItem;
 #if discord_rpc
 import Discord.DiscordClient;
 #end
@@ -2381,7 +2382,6 @@ class PlayState extends MusicBeatSubState
 
       // Play the strumline animation.
       playerStrumline.playStatic(input.noteDirection);
-
       playerStrumline.releaseKey(input.noteDirection);
     }
   }
@@ -2668,12 +2668,14 @@ class PlayState extends MusicBeatSubState
 
     playerStrumline.hitNote(daNote, !isComboBreak);
 
+    songScore += score;
+
+    // Visual/audio effects
     if (daRating == 'sick')
     {
       playerStrumline.playNoteSplash(daNote.noteData.getDirection());
     }
-
-    songScore += score;
+    playerStrumline.playNoteHitSound(daRating);
 
     if (!isPracticeMode)
     {
