@@ -655,12 +655,12 @@ class Strumline extends FlxSpriteGroup
     return getByDirection(direction).isConfirm();
   }
 
-  public function playNoteHitSound(thyRating:String):Void
+  public function playNoteHitSound():Void
   {
     if (Preferences.noteHitSoundVolume <= 0 || Preferences.noteHitSound == NoteHitSoundType.None) return;
 
     var hitSound:String = Preferences.noteHitSound + "Hit";
-    var path:String = Paths.sound('noteHitSounds/${hitSound}') ?? Paths.sound('noteHitSounds/smackHit');
+    var path:String = Paths.sound('noteHitSounds/${hitSound}') ?? Paths.sound('noteHitSounds/pingPong');
     FunkinSound.playOnce(path, Preferences.noteHitSoundVolume / 100);
   }
 

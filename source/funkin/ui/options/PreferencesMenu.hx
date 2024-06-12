@@ -66,7 +66,6 @@ class PreferencesMenu extends Page
     createPrefItemEnum('Note hit sound', 'Enable to play a click sound when hitting notes', [
       NoteHitSoundType.None => "None",
       NoteHitSoundType.PingPong => "Ping pong",
-      NoteHitSoundType.Smack => "Smack",
       NoteHitSoundType.VineBoom => "Vine boom"
     ], function(value:String):Void {
       // FIXME: Enum pref items wont load for some reason!!
