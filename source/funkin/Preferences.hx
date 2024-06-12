@@ -1,7 +1,6 @@
 package funkin;
 
 import funkin.save.Save;
-import funkin.ui.options.MenuItemEnums;
 
 /**
  * A core class which provides a store of user-configurable, globally relevant values.
