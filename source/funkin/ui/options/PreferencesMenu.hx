@@ -15,7 +15,7 @@ import funkin.audio.FunkinSound;
 import funkin.ui.options.MenuItemEnums;
 import funkin.ui.options.items.CheckboxPreferenceItem;
 import funkin.ui.options.items.NumberPreferenceItem;
-import funkin.ui.options.items.EnumPreferenceItem;
+import funkin.ui.options.MenuItemEnums;
 
 class PreferencesMenu extends Page
 {

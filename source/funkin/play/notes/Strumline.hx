@@ -17,6 +17,8 @@ import funkin.ui.options.PreferencesMenu;
 import funkin.util.SortUtil;
 import funkin.modding.events.ScriptEvent;
 import funkin.play.notes.notekind.NoteKindManager;
+import funkin.ui.options.MenuItemEnums;
+import funkin.audio.FunkinSound;
 
 /**
  * A group of sprites which handles the receptor, the note splashes, and the notes (with sustains) for a given player.
