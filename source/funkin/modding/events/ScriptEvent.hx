@@ -151,7 +151,8 @@ class HitNoteScriptEvent extends NoteScriptEvent
   public var hitDiff:Float = 0;
 
   /**
-   * If the hit causes a notesplash, or a note hit sound
+   * Whether this note hit causes a note splash to display.
+   * Defaults to true only on "sick" notes.
    */
   public var doesNoteHitEffects:Bool = false;
 
